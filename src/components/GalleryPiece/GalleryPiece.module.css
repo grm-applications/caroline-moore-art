@@ -1,0 +1,59 @@
+
+.canvas {
+	margin: 20px;
+	border-style: solid;
+	border-color: white;
+	border-width: 3px;
+	overflow: hidden;
+	padding: 0px;
+	width: 300px;
+	background-color: white;
+}
+
+.imageContainer {
+	width: 100%;
+	background-color: #F3F3F3;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	width: 100%;
+}
+
+.imageContainer img {
+	width: 100%;
+	cursor: pointer;
+}
+
+.title {
+	font-size: 15px;
+	margin: 5px;
+	color: #272727;
+	text-align: left;
+}
+
+.title:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.author {
+	font-size: 12px;
+	margin: 5px;
+	color: #272727;
+	text-align: left;
+}
+
+.author:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.price {
+	font-size: 15px;
+	margin: 5px;
+	color: #272727;
+	text-align: left;
+	font-weight: bold;
+}
