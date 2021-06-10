@@ -1,28 +1,16 @@
 
+@font-face {
+	font-family: "Pacifico";
+	src: url("../../assets/Pacifico/Pacifico-Regular.ttf");
+}
+
 .canvas {
 	min-height: calc(100vh - 60px);
-	background-color: #F3F3F3;
+	background-color: #E7E3E3;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	flex-direction: column;
-}
-
-.header {
-	width: 85%;
-	background-color: white;
-	padding: 20px;
-	margin-bottom: 30px;
-	border-bottom-right-radius: 20px;
-	border-bottom-left-radius: 20px;
-}
-
-.header h1 {
-	margin: 0px;
-	padding: 0px;
-	color: #272727;
-	width: 100%;
-	text-align: center;
-	font-family: "Pacifico";
 }
 
 .canvas form {
@@ -30,44 +18,51 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background-color: #272727;
-	border-radius: 10px;
-	padding: 20px;
+	background-color: white;
+	border-width: 1px;
+	padding: 0px;
+	box-shadow: 1px 1px 15px -9px #444444;
+	border-style: solid;
+	border-color: white;
+
 }
 
 .canvas form h1 {
-	color: white;
 	font-size: 25px;
 	margin: 0px;
 	width: 50vw;
 	text-align: center;
+	font-family: "Avenir";
+	color: black;
+	background-color: #E4E4E4;
+	padding: 20px;
+	margin-bottom: 10px 
 }
 
 .canvas form input[type="text"], .canvas form textarea {
-	width: 80%;
 	padding: 10px;
 	font-size: 15px;
+	width: 75%;
 	outline: none;
-	border-style: none;
-	border-bottom-style: solid;
-	border-bottom-color: white;
-	border-bottom-width: 1px;
+	border-style: solid;
+	border-color: #BDBDBD;
+	border-width: 1px;
 	background-color: transparent;
-	color: white;
+	color: #272727;
 	margin: 10px;
 	resize: none;
 }
 
-
 .canvas form input[type="submit"] {
-	height: 40px;
-	width: 100px;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
 	background-color: #C9A762;
 	border-style: none;
-	border-radius: 3px;
 	color: #272727;
 	cursor: pointer;
-	margin-top: 20px;
+	margin: 10px;
 	font-size: 20px;
-	padding: 0px;
+	font-family: "Avenir";
+	border-radius: 3px;
 }
