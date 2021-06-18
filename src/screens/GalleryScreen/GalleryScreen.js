@@ -19,7 +19,7 @@ class GalleryScreen extends React.Component {
 				return res.json();
 			})
 			.then(data => {
-				this.setState({artwork: data.artwork, isLoading: false})
+				this.setState({artwork: data, isLoading: false})
 			})
 			.catch(error => {
 				console.log(error)
@@ -36,7 +36,7 @@ class GalleryScreen extends React.Component {
 					</div>
 					<div class={styles.gallery}>
 						{this.state.artwork.map((element, index) => {
-							return <GalleryPiece key={index} id={index} title={element.title} author={element.author} price={element.price} image={element.url}/>
+							return <GalleryPiece key={index} id={index + 1} title={element.title} author={element.author} price={element.price} image={element.url}/>
 						})}
 					</div>
 				</div>

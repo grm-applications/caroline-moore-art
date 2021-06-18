@@ -19,7 +19,7 @@ class ProductScreen extends React.Component {
 				return res.json();
 			})
 			.then(data => {
-				this.setState({productInfo: data, isLoading: false})
+				this.setState({productInfo: data[0], isLoading: false})
 			})
 			.catch(error => {
 				console.log(error)

@@ -18,7 +18,7 @@ class GalleryPiece extends React.Component {
 				</div>
 				<Link to={{pathname: `/gallery:${this.props.id}`, state: {modalIsShown: true}}} style={{textDecoration: "none"}}><h1 class={styles.title}>{this.props.title}</h1></Link>
 				<Link to="/about" style={{textDecoration: "none"}}><h2 class={styles.author}>{this.props.author}</h2></Link>
-				<h3 class={styles.price}>{this.props.price}</h3>
+				<h3 class={styles.price}>£{this.props.price}</h3>
 			</div>
 		)
 	}
